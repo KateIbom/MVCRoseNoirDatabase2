@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using MVCRoseNoirDatabase.Models;
 
 namespace MVCRoseNoirDatabase.Data
 {
@@ -9,5 +10,8 @@ namespace MVCRoseNoirDatabase.Data
             : base(options)
         {
         }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductOption> ProductOptions { get; set; }
+
     }
 }
