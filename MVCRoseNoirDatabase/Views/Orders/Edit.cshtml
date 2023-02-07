@@ -1,0 +1,69 @@
+﻿@model MVCRoseNoirDatabase.Models.Order
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Order</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="OrderId" />
+            <div class="form-group">
+                <label asp-for="CustomerId" class="control-label"></label>
+                <input asp-for="CustomerId" class="form-control" />
+                <span asp-validation-for="CustomerId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrderType" class="control-label"></label>
+                <select asp-for="OrderType" class="form-control"></select>
+                <span asp-validation-for="OrderType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <select asp-for="Status" class="form-control"></select>
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateOrdered" class="control-label"></label>
+                <input asp-for="DateOrdered" class="form-control" />
+                <span asp-validation-for="DateOrdered" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateDespatched" class="control-label"></label>
+                <input asp-for="DateDespatched" class="form-control" />
+                <span asp-validation-for="DateDespatched" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateDelivered" class="control-label"></label>
+                <input asp-for="DateDelivered" class="form-control" />
+                <span asp-validation-for="DateDelivered" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DeliveryCharge" class="control-label"></label>
+                <input asp-for="DeliveryCharge" class="form-control" />
+                <span asp-validation-for="DeliveryCharge" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GiftsCount" class="control-label"></label>
+                <input asp-for="GiftsCount" class="form-control" />
+                <span asp-validation-for="GiftsCount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

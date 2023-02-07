@@ -1,4 +1,7 @@
-﻿namespace MVCRoseNoirDatabase.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
+
+namespace MVCRoseNoirDatabase.Models
 {
     //https://www.larosenoir.co.uk/
 
@@ -6,9 +9,11 @@
     {
         public int ProductId { get; set; }
 
+        [Required, StringLength(50), DisplayName("Option Name")]
         public string Name { get; set; } = string.Empty;
 
         // Formatted text
+        [Required, StringLength(200), DisplayName("Description")] 
         public string Description { get; set; } = string.Empty;
 
         public string MainImageUrl { get; set; } = string.Empty;

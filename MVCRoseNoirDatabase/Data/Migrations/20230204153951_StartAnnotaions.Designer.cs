@@ -4,6 +4,7 @@ using MVCRoseNoirDatabase.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MVCRoseNoirDatabase.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230204153951_StartAnnotaions")]
+    partial class StartAnnotaions
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,193 +24,6 @@ namespace MVCRoseNoirDatabase.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("MVCRoseNoirDatabase.Models.Address", b =>
-                {
-                    b.Property<int>("AddressId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AddressId"));
-
-                    b.Property<int>("AddressType")
-                        .HasColumnType("int");
-
-                    b.Property<string>("City")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("County")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("CustomerId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("District")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("HouseNumber")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PostCode")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Street")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("AddressId");
-
-                    b.HasIndex("CustomerId");
-
-                    b.ToTable("Address");
-                });
-
-            modelBuilder.Entity("MVCRoseNoirDatabase.Models.Customer", b =>
-                {
-                    b.Property<int>("CustomerId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CustomerId"));
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
-
-                    b.Property<string>("FirstName")
-                        .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
-
-                    b.Property<string>("HomeNumber")
-                        .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)");
-
-                    b.Property<string>("LastName")
-                        .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
-
-                    b.Property<string>("MobileNumber")
-                        .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)");
-
-                    b.HasKey("CustomerId");
-
-                    b.ToTable("Customers");
-                });
-
-            modelBuilder.Entity("MVCRoseNoirDatabase.Models.Order", b =>
-                {
-                    b.Property<int>("OrderId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderId"));
-
-                    b.Property<int>("CustomerId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("DateDelivered")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("DateDespatched")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("DateOrdered")
-                        .HasColumnType("datetime2");
-
-                    b.Property<decimal>("DeliveryCharge")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<int>("GiftsCount")
-                        .HasColumnType("int");
-
-                    b.Property<int>("OrderType")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
-
-                    b.HasKey("OrderId");
-
-                    b.HasIndex("CustomerId");
-
-                    b.ToTable("Order");
-                });
-
-            modelBuilder.Entity("MVCRoseNoirDatabase.Models.OrderItem", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("OrderId")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<int>("ProductOptionId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("OderItems");
-                });
-
-            modelBuilder.Entity("MVCRoseNoirDatabase.Models.PaymentCard", b =>
-                {
-                    b.Property<int>("PaymentCardId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PaymentCardId"));
-
-                    b.Property<int>("Bank")
-                        .HasColumnType("int");
-
-                    b.Property<string>("CardNumber")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<int?>("CustomerId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ExpiryMonth")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ExpiryYear")
-                        .HasColumnType("int");
-
-                    b.Property<string>("NameOnCard")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<int>("PaymentType")
-                        .HasColumnType("int");
-
-                    b.HasKey("PaymentCardId");
-
-                    b.HasIndex("CustomerId");
-
-                    b.ToTable("Paymentcard");
-                });
 
             modelBuilder.Entity("MVCRoseNoirDatabase.Models.Product", b =>
                 {
@@ -230,8 +46,7 @@ namespace MVCRoseNoirDatabase.Data.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<float>("Discount")
                         .HasColumnType("real");
@@ -246,8 +61,7 @@ namespace MVCRoseNoirDatabase.Data.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
@@ -273,8 +87,7 @@ namespace MVCRoseNoirDatabase.Data.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<float>("Discount")
                         .HasColumnType("real");
@@ -317,32 +130,6 @@ namespace MVCRoseNoirDatabase.Data.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("ProductOptions");
-                });
-
-            modelBuilder.Entity("MVCRoseNoirDatabase.Models.Receiver", b =>
-                {
-                    b.Property<int>("ReceiverId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ReceiverId"));
-
-                    b.Property<string>("Message")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("OrderId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ReceiverName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("ReceiverId");
-
-                    b.HasIndex("OrderId");
-
-                    b.ToTable("Receiver");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -547,29 +334,6 @@ namespace MVCRoseNoirDatabase.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("MVCRoseNoirDatabase.Models.Address", b =>
-                {
-                    b.HasOne("MVCRoseNoirDatabase.Models.Customer", null)
-                        .WithMany("Addresses")
-                        .HasForeignKey("CustomerId");
-                });
-
-            modelBuilder.Entity("MVCRoseNoirDatabase.Models.Order", b =>
-                {
-                    b.HasOne("MVCRoseNoirDatabase.Models.Customer", null)
-                        .WithMany("Orders")
-                        .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("MVCRoseNoirDatabase.Models.PaymentCard", b =>
-                {
-                    b.HasOne("MVCRoseNoirDatabase.Models.Customer", null)
-                        .WithMany("PaymentCards")
-                        .HasForeignKey("CustomerId");
-                });
-
             modelBuilder.Entity("MVCRoseNoirDatabase.Models.ProductOption", b =>
                 {
                     b.HasOne("MVCRoseNoirDatabase.Models.Product", null)
@@ -577,13 +341,6 @@ namespace MVCRoseNoirDatabase.Data.Migrations
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("MVCRoseNoirDatabase.Models.Receiver", b =>
-                {
-                    b.HasOne("MVCRoseNoirDatabase.Models.Order", null)
-                        .WithMany("Receivers")
-                        .HasForeignKey("OrderId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -635,20 +392,6 @@ namespace MVCRoseNoirDatabase.Data.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("MVCRoseNoirDatabase.Models.Customer", b =>
-                {
-                    b.Navigation("Addresses");
-
-                    b.Navigation("Orders");
-
-                    b.Navigation("PaymentCards");
-                });
-
-            modelBuilder.Entity("MVCRoseNoirDatabase.Models.Order", b =>
-                {
-                    b.Navigation("Receivers");
                 });
 
             modelBuilder.Entity("MVCRoseNoirDatabase.Models.Product", b =>
