@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,14 +19,26 @@ namespace MVCRoseNoirDatabase.Models
     {
         public int AddressId { get; set; }
         public AddressTypes AddressType { get; set; }
+
+        [Required, StringLength(5)]
         public string HouseNumber { get; set; } = string.Empty;
+
+        [Required, StringLength(20)]
 
         public string Street { get; set; } = string.Empty;
 
+        [Required, StringLength(20)]
+
         public string District { get; set; } = string.Empty;
+
+        [Required, StringLength(20)]
         public string City { get; set; } = string.Empty;
 
+        [Required, StringLength(20)]
+
         public string County { get; set; } = string.Empty;
+
+        [Required, StringLength(8)]
 
         public string PostCode { get; set; } = string.Empty;
 

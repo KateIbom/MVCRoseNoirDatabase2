@@ -18,8 +18,10 @@ namespace MVCRoseNoirDatabase.Models
     {
         [Key]
         public int PhoneNumberId { get; set; }
+
         [Required, StringLength (3)]
         public string InternationalCode { get; set; } = string.Empty;
+
         [Required, StringLength(3), DataType(DataType .PhoneNumber )]
         public string AreaCode { get; set; } =  string.Empty ;
 
