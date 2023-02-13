@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace MVCRoseNoirDatabase.Models
 {
     public class OrderItem
@@ -15,7 +16,13 @@ namespace MVCRoseNoirDatabase.Models
         
         public int ProductOptionId { get; set; }
 
+        [Range (0,12)]
+
         public int Quantity { get; set; } = 1;
+
+        [Range(0,200)]
+
+        [DataType(DataType.Currency)]
 
         public Decimal Price { get; set; }
     }
