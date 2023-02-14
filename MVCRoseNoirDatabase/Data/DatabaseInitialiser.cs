@@ -1,4 +1,5 @@
 ﻿using MVCRoseNoirDatabase.Models;
+using NuGet.Packaging;
 
 namespace MVCRoseNoirDatabase.Data
 {
@@ -11,8 +12,13 @@ namespace MVCRoseNoirDatabase.Data
 
         public static void AddProducts(ApplicationDbContext context)
         {
+            if(context.Products.Any())
+            {
+                return;
+            }
+
             var products = new Product[]
-                {
+            {
                 new Product
                 {
                     ProductId = 1,
@@ -681,6 +687,30 @@ namespace MVCRoseNoirDatabase.Data
                         }
                     }
             };
+
+            foreach(var product in products)
+            {
+                context.Products.Add(product);
+            }
+            
+            context.SaveChanges();
+
+
+            foreach(Product p in products)
+            {
+                if(p.Options.Any())
+                {
+                    ProductOption[] options = new ProductOption[p.Options.Count];
+                    options.AddRange(p.Options);
+
+                    if(context.ProductOptions.Any())
+                    {
+                        return;
+                    }
+
+
+                }
+            }
         }
     }
     
