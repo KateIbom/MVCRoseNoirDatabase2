@@ -708,7 +708,12 @@ namespace MVCRoseNoirDatabase.Data
                         return;
                     }
 
+                    foreach(var option in options)
+                    {
+                        context.ProductOptions.Add(option);
+                    }
 
+                    context.SaveChanges();
                 }
             }
         }
