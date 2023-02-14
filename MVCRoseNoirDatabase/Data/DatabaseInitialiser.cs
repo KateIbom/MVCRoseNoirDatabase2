@@ -337,7 +337,7 @@ namespace MVCRoseNoirDatabase.Data
                     },
                     new Product
                     {
-                        ProductId = 6,
+                        ProductId = 7,
                         Name = "Citric Delight",
                         Description = "Grapefruit, Lime & Sweet Orange ",
                         MainImageUrl = "CandlePlumPudding.png",//TO DO
@@ -400,7 +400,7 @@ namespace MVCRoseNoirDatabase.Data
                     },
                     new Product
                     {
-                        ProductId = 7,
+                        ProductId = 8,
                         Name = "Stress Buster",
                         Description = "This is a simple but classic scent. A fruity, floral combination of cranberries"
                         + "followed by orange and cinnamon with floral back notes of jasmine and lily on a base of sandal,"
@@ -467,7 +467,7 @@ namespace MVCRoseNoirDatabase.Data
                     },
                     new Product
                     {
-                        ProductId = 8,
+                        ProductId = 9,
                         Name = "Calm Bath Bomb",
                         Description = "This is a simple but classic scent. A fruity, floral combination of cranberries"
                         + "followed by orange and cinnamon with floral back notes of jasmine and lily on a base of sandal,"
@@ -489,7 +489,7 @@ namespace MVCRoseNoirDatabase.Data
                         {
                             new ProductOption
                             {
-                                Id = 18,
+                                Id = 19,
                                 ProductId = 9,
                                 AvailableStock = 1,
                                 Name = "Size Doughnut Shape",//NO INFO PROVIDED
@@ -502,7 +502,7 @@ namespace MVCRoseNoirDatabase.Data
                             },
                             new ProductOption
                             {
-                                Id = 19,
+                                Id = 20,
                                 ProductId = 9,
                                 AvailableStock = 1,
                                 Name = "Size Round Shape",
@@ -534,7 +534,7 @@ namespace MVCRoseNoirDatabase.Data
                     },
                     new Product
                     {
-                        ProductId = 9,
+                        ProductId = 10,
                         Name = "Bergamot & Lavender",
                         Description = "This is a simple but classic scent. A fruity, floral combination of cranberries"
                         + "followed by orange and cinnamon with floral back notes of jasmine and lily on a base of sandal,"
@@ -556,7 +556,7 @@ namespace MVCRoseNoirDatabase.Data
                             new ProductOption
                             {
                                 Id = 21,
-                                ProductId = 9,
+                                ProductId = 10,
                                 AvailableStock = 1,
                                 Name = "Medium",//NO INFO PROVIDED
                                 Description = "Sweet Almond Oil, \nCocoa, \nWitch Hazel, \nLavenda & Epsom Salt",
@@ -569,7 +569,7 @@ namespace MVCRoseNoirDatabase.Data
                             new ProductOption
                             {
                                 Id = 22,
-                                ProductId = 9,
+                                ProductId = 10,
                                 AvailableStock = 1,
                                 Name = "Large",
                                 Description = "Sweet Almond Oil, \nCocoa, \nWitch Hazel, \nLavenda & Epsom Salt",
@@ -585,7 +585,7 @@ namespace MVCRoseNoirDatabase.Data
                     },
                     new Product
                     {
-                        ProductId = 10,
+                        ProductId = 11,
                         Name = "Stress Buster Bar",
                         Description = "This is a simple but classic scent. A fruity, floral combination of cranberries"
                         + "followed by orange and cinnamon with floral back notes of jasmine and lily on a base of sandal,"
@@ -621,7 +621,7 @@ namespace MVCRoseNoirDatabase.Data
                             new ProductOption
                             {
                                 Id = 24,
-                                ProductId = 10,
+                                ProductId = 11,
                                 AvailableStock = 1,
                                 Name = "Large",
                                 Description = "Sweet Almond Oil, Cocoa, Witch Hazel, Lavenda & Epsom Salt",
@@ -637,7 +637,7 @@ namespace MVCRoseNoirDatabase.Data
                     },
                     new Product
                     {
-                        ProductId = 11,
+                        ProductId = 12,
                         Name = "Oatmeal & Tea Tree",
                         Description = "This is a simple but classic scent. A fruity, floral combination of cranberries"
                         + "followed by orange and cinnamon with floral back notes of jasmine and lily on a base of sandal,"
@@ -658,8 +658,8 @@ namespace MVCRoseNoirDatabase.Data
                         {
                             new ProductOption
                             {
-                                Id = 24,
-                                ProductId = 11,
+                                Id = 25,
+                                ProductId = 12,
                                 AvailableStock = 1,
                                 Name = "Medium",//NO INFO PROVIDED
                                 Description = "Sweet Almond Oil, Cocoa, Witch Hazel, Lavenda & Epsom Salt",
@@ -671,8 +671,8 @@ namespace MVCRoseNoirDatabase.Data
                             },
                             new ProductOption
                             {
-                                Id = 25,
-                                ProductId = 11,
+                                Id = 26,
+                                ProductId = 12,
                                 AvailableStock = 1,
                                 Name = "Large",
                                 Description = "Sweet Almond Oil, Cocoa, Witch Hazel, Lavenda & Epsom Salt",
