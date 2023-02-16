@@ -9,17 +9,18 @@ namespace MVCRoseNoirDatabase.Models
     {
         public int ProductId { get; set; }
 
-        [Required, StringLength(50), DisplayName("Option Name")]
+        [Required, StringLength(80), DisplayName("Option Name")]
         public string Name { get; set; } = string.Empty;
 
         // Formatted text
-        [Required, StringLength(200), DisplayName("Description")] 
+        [Required, DisplayName("Description")] 
         public string Description { get; set; } = string.Empty;
 
         public string MainImageUrl { get; set; } = string.Empty;
 
         public Categories Category { get; set; }
 
+        [DataType(DataType.Currency)]
         public decimal Price { get; set; } = 0;
 
         public float Discount { get; set; } = 0;

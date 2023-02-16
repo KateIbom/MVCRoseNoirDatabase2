@@ -21,7 +21,7 @@ namespace MVCRoseNoirDatabase.Data
             {
                 new Product
                 {
-                    ProductId = 1,
+                    //ProductId = 1,
                     Name = "Crumble Candle",
                     Description = "A sweet and fruity delight combined with custard, vanilla, malt,"
                         + " cream, strawberry, red berries and pink rhubarb combine in this super"
@@ -74,7 +74,7 @@ namespace MVCRoseNoirDatabase.Data
 
                     new Product
                     {
-                        ProductId = 2,
+                        //ProductId = 2,
                         Name = "Plum Pudding Candle",
                         Description = "A combination of vibrant, fruity accord of juicy black plum,"
                             + " blackberry and fresh rhubarb supported with interludes of ripe pear"
@@ -127,7 +127,7 @@ namespace MVCRoseNoirDatabase.Data
                     },
                     new Product
                     {
-                        ProductId = 3,
+                        //ProductId = 3,
                         Name = "Lilly of the Valley",
                         Description = "Our natural soy wax candles are sustainable and blended with high-quality fragrances "
                         + "and hand-poured into recyclable/refill and elegant glass jars with beautiful wooden lids to provide"
@@ -182,13 +182,13 @@ namespace MVCRoseNoirDatabase.Data
                     },
                     new Product
                     {
-                        ProductId = 4,
+                        //ProductId = 4,
                         Name = "Lemon Drizzle Candle",
-                        Description = "Our natural soy wax candles are sustainable and blended with high-quality fragrances and "
-                        + "hand-poured into recyclable/refill and elegant glass jars with beautiful wooden lids to provide your home"
-                        + " with a delicately scented steady burn time of up to 90 hours, (depending on size). "
-                        + "Our candles are presented in a beautiful design box (which may change from time to time), "
-                        + "providing you with the perfect gift for all occasions.",
+                        //Description = "Our natural soy wax candles are sustainable and blended with high-quality fragrances and "
+                        //+ "hand-poured into recyclable/refill and elegant glass jars with beautiful wooden lids to provide your home"
+                        //+ " with a delicately scented steady burn time of up to 90 hours, (depending on size). "
+                        //+ "Our candles are presented in a beautiful design box (which may change from time to time), "
+                        //+ "providing you with the perfect gift for all occasions.",
                         MainImageUrl = "LemonDrizzelCandleIMG_2154.JPG",//TO DO
                         Price = 22.50m,
                         Discount = 0,
@@ -237,7 +237,7 @@ namespace MVCRoseNoirDatabase.Data
                     },
                     new Product
                     {
-                        ProductId = 5,
+                        //ProductId = 5,
                         Name = "Cuban Oak Diffuser",
                         Description = "Aromatic vintage cologne notes lead into a heart of rich sweet tobacco, warm spices and a hint of cognac. "
                         + "Smokey woods of oak, ebony and incense combine with dark musk to complete this fragrance.",
@@ -288,7 +288,7 @@ namespace MVCRoseNoirDatabase.Data
                     },
                     new Product
                     {
-                        ProductId = 6,
+                        //ProductId = 6,
                         Name = "Pandoras Box Diffuser",
                         Description = "",
                         MainImageUrl = "CandlePlumPudding.png",//TO DO
@@ -337,7 +337,7 @@ namespace MVCRoseNoirDatabase.Data
                     },
                     new Product
                     {
-                        ProductId = 7,
+                        //ProductId = 7,
                         Name = "Citric Delight",
                         Description = "Grapefruit, Lime & Sweet Orange ",
                         MainImageUrl = "CandlePlumPudding.png",//TO DO
@@ -400,7 +400,7 @@ namespace MVCRoseNoirDatabase.Data
                     },
                     new Product
                     {
-                        ProductId = 8,
+                        //ProductId = 8,
                         Name = "Stress Buster",
                         Description = "This is a simple but classic scent. A fruity, floral combination of cranberries"
                         + "followed by orange and cinnamon with floral back notes of jasmine and lily on a base of sandal,"
@@ -467,7 +467,7 @@ namespace MVCRoseNoirDatabase.Data
                     },
                     new Product
                     {
-                        ProductId = 9,
+                        //ProductId = 9,
                         Name = "Calm Bath Bomb",
                         Description = "This is a simple but classic scent. A fruity, floral combination of cranberries"
                         + "followed by orange and cinnamon with floral back notes of jasmine and lily on a base of sandal,"
@@ -517,7 +517,7 @@ namespace MVCRoseNoirDatabase.Data
                             },
                             new ProductOption
                             {
-                                Id = 20,
+                                Id = 21,
                                 ProductId = 9,
                                 AvailableStock = 1,
                                 Name = "Size Football Shape",
@@ -534,7 +534,7 @@ namespace MVCRoseNoirDatabase.Data
                     },
                     new Product
                     {
-                        ProductId = 10,
+                        //ProductId = 10,
                         Name = "Bergamot & Lavender",
                         Description = "This is a simple but classic scent. A fruity, floral combination of cranberries"
                         + "followed by orange and cinnamon with floral back notes of jasmine and lily on a base of sandal,"
@@ -555,7 +555,7 @@ namespace MVCRoseNoirDatabase.Data
                         {
                             new ProductOption
                             {
-                                Id = 21,
+                                Id = 22,
                                 ProductId = 10,
                                 AvailableStock = 1,
                                 Name = "Medium",//NO INFO PROVIDED
@@ -568,7 +568,7 @@ namespace MVCRoseNoirDatabase.Data
                             },
                             new ProductOption
                             {
-                                Id = 22,
+                                Id = 23,
                                 ProductId = 10,
                                 AvailableStock = 1,
                                 Name = "Large",
@@ -585,7 +585,7 @@ namespace MVCRoseNoirDatabase.Data
                     },
                     new Product
                     {
-                        ProductId = 11,
+                        //ProductId = 11,
                         Name = "Stress Buster Bar",
                         Description = "This is a simple but classic scent. A fruity, floral combination of cranberries"
                         + "followed by orange and cinnamon with floral back notes of jasmine and lily on a base of sandal,"
@@ -607,7 +607,7 @@ namespace MVCRoseNoirDatabase.Data
                         {
                             new ProductOption
                             {
-                                Id = 23,
+                                Id = 24,
                                 ProductId = 10,
                                 AvailableStock = 1,
                                 Name = "Medium",
@@ -620,7 +620,7 @@ namespace MVCRoseNoirDatabase.Data
                             },
                             new ProductOption
                             {
-                                Id = 24,
+                                Id = 25,
                                 ProductId = 11,
                                 AvailableStock = 1,
                                 Name = "Large",
@@ -637,7 +637,7 @@ namespace MVCRoseNoirDatabase.Data
                     },
                     new Product
                     {
-                        ProductId = 12,
+                        //ProductId = 12,
                         Name = "Oatmeal & Tea Tree",
                         Description = "This is a simple but classic scent. A fruity, floral combination of cranberries"
                         + "followed by orange and cinnamon with floral back notes of jasmine and lily on a base of sandal,"
@@ -658,7 +658,7 @@ namespace MVCRoseNoirDatabase.Data
                         {
                             new ProductOption
                             {
-                                Id = 25,
+                                Id = 26,
                                 ProductId = 12,
                                 AvailableStock = 1,
                                 Name = "Medium",//NO INFO PROVIDED
@@ -671,7 +671,7 @@ namespace MVCRoseNoirDatabase.Data
                             },
                             new ProductOption
                             {
-                                Id = 26,
+                                Id = 27,
                                 ProductId = 12,
                                 AvailableStock = 1,
                                 Name = "Large",
@@ -687,7 +687,7 @@ namespace MVCRoseNoirDatabase.Data
                         }
                     }
             };
-
+            
             foreach(var product in products)
             {
                 context.Products.Add(product);
