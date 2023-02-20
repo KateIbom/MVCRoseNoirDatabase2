@@ -40,7 +40,7 @@ using MVCRoseNoirDatabase.Data;
 
         var context = services.GetRequiredService<ApplicationDbContext>();
         context.Database.EnsureCreated();
-        DatabaseInitialiser.SeedData(context);
+       // DatabaseInitialiser.SeedData(context);
     }
 
 app.UseHttpsRedirection();
