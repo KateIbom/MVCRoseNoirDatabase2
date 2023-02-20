@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MVCRoseNoirDatabase.Models
 {
@@ -12,6 +13,7 @@ namespace MVCRoseNoirDatabase.Models
     public class ProductOption
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Id { get; set; }
         
         // The main product
