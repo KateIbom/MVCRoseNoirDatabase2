@@ -1,23 +1,21 @@
 ﻿@model IEnumerable<MVCRoseNoirDatabase.Models.Product>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Prducts";
 }
 
-<h1>Index</h1>
+<h1>Rose Noir Products</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
+
+<table class="table table-bordered table-striped table-hover">
     <thead>
-        <tr>
+        <tr class="bg-light">
             <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
-            <th>
+@*            <th>
                 @Html.DisplayNameFor(model => model.Description)
-            </th>
+            </th>*@
             <th>
                 @Html.DisplayNameFor(model => model.MainImageUrl)
             </th>
@@ -33,24 +31,26 @@
             <th>
                 @Html.DisplayNameFor(model => model.CountryOfOrigin)
             </th>
-            <th>
+ @*           <th>
                 @Html.DisplayNameFor(model => model.IngredientList)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.AllergenList)
-            </th>
+            </th>*@
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+    
+    @foreach (var item in Model) 
+    {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
-            <td>
+@*            <td>
                 @Html.DisplayFor(modelItem => item.Description)
-            </td>
+            </td>*@
             <td>
                 @Html.DisplayFor(modelItem => item.MainImageUrl)
             </td>
@@ -60,24 +60,27 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
-            <td>
+            <td class="text-center">
                 @Html.DisplayFor(modelItem => item.Discount)
             </td>
-            <td>
+            <td class="text-center">
                 @Html.DisplayFor(modelItem => item.CountryOfOrigin)
             </td>
-            <td>
+ @*           <td>
                 @Html.DisplayFor(modelItem => item.IngredientList)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.AllergenList)
-            </td>
+            </td>*@
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ProductId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ProductId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ProductId">Delete</a>
+                <a class="btn btn-success p2" asp-action="Edit" asp-route-id="@item.ProductId">Edit</a>
+                <a class="btn btn-info p2" asp-action="Details" asp-route-id="@item.ProductId">Details</a>
+                <a class="btn btn-danger p2" asp-action="Delete" asp-route-id="@item.ProductId">Delete</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
+<p>
+    <a class="btn btn-success" asp-action="Create">Create New</a>
+</p>

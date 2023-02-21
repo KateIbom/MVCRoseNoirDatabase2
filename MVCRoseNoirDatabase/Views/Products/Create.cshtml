@@ -4,9 +4,9 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Add New Product</h1>
 
-<h4>Product</h4>
+<h4>Product Details</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -19,7 +19,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Description" class="control-label"></label>
-                <input asp-for="Description" class="form-control" />
+                <textarea asp-for="Description" class="form-control"></textarea>
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -29,7 +29,8 @@
             </div>
             <div class="form-group">
                 <label asp-for="Category" class="control-label"></label>
-                <select asp-for="Category" class="form-control"></select>
+                <select asp-for="Category" class="form-control" 
+                    asp-items="Html.GetEnumSelectList<Categories>()"></select>
                 <span asp-validation-for="Category" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -49,23 +50,23 @@
             </div>
             <div class="form-group">
                 <label asp-for="IngredientList" class="control-label"></label>
-                <input asp-for="IngredientList" class="form-control" />
+                <textarea asp-for="IngredientList" class="form-control"></textarea>
                 <span asp-validation-for="IngredientList" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="AllergenList" class="control-label"></label>
-                <input asp-for="AllergenList" class="form-control" />
+                <textarea asp-for="AllergenList" class="form-control"></textarea>
                 <span asp-validation-for="AllergenList" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-primary m-2" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a class="btn btn-secondary m-2" asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

@@ -18,6 +18,7 @@ namespace MVCRoseNoirDatabase.Models
         
         // The main product
         public int ProductId { get; set; }
+
         // e.g. the name of a colour, or the size
         [Required,StringLength(50),DisplayName("Option Name")]
         public string Name { get; set; } = string.Empty;
@@ -47,5 +48,8 @@ namespace MVCRoseNoirDatabase.Models
         public OptionTypes OptionType {get; set;}
 
         public float Discount { get; set; } = 0;
+
+        // NAVIGATION PROPERTY
+        public virtual Product Product { get; set; }
     }
 }

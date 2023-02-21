@@ -40,8 +40,8 @@ namespace MVCRoseNoirDatabase.Data
                         {
                             new ProductOption
                             {
-                                Id = 1,
-                                ProductId = 1,
+                                //Id = 1,
+                                //ProductId = 1,
                                 AvailableStock = 1,
                                 Name = "Glass size H 83mm D 70mm",
                                 Description = "Approx. burn time: 30-35 hours",
@@ -55,8 +55,8 @@ namespace MVCRoseNoirDatabase.Data
                             },
                             new ProductOption
                             {
-                                Id = 2,
-                                ProductId = 1,
+                                //Id = 2,
+                                //ProductId = 1,
                                 AvailableStock = 1,
                                 Name = "Glass size H 93mm D 78mm",
                                 Description = "Approx. burn time: 40-45 hours",
@@ -95,8 +95,8 @@ namespace MVCRoseNoirDatabase.Data
                         {
                             new ProductOption
                             {
-                                Id = 3,
-                                ProductId = 2,
+                                //Id = 3,
+                                //ProductId = 2,
                                 AvailableStock = 1,
                                 Name = "Glass size H 83mm D 70mm",
                                 Description = "Approx. burn time: 30-35 hours",
@@ -110,8 +110,8 @@ namespace MVCRoseNoirDatabase.Data
                             },
                             new ProductOption
                             {
-                                Id = 4,
-                                ProductId = 2,
+                                //Id = 4,
+                                //ProductId = 2,
                                 AvailableStock = 1,
                                 Name = "Glass size H 93mm D 78mm",
                                 Description = "Approx. burn time: 40-45 hours",
@@ -150,8 +150,8 @@ namespace MVCRoseNoirDatabase.Data
                         {
                             new ProductOption
                             {
-                                Id = 5,
-                                ProductId = 3,
+                                //Id = 5,
+                                //ProductId = 3,
                                 AvailableStock = 1,
                                 Name = "Glass size H 83mm D 70mm",
                                 Description = "Approx. burn time: 30-35 hours",
@@ -165,8 +165,8 @@ namespace MVCRoseNoirDatabase.Data
                             },
                             new ProductOption
                             {
-                                Id = 6,
-                                ProductId = 3,
+                                //Id = 6,
+                                //ProductId = 3,
                                 AvailableStock = 1,
                                 Name = "Glass size H 93mm D 78mm",
                                 Description = "Approx. burn time: 40-45 hours",
@@ -205,8 +205,8 @@ namespace MVCRoseNoirDatabase.Data
                         {
                             new ProductOption
                             {
-                                Id = 7,
-                                ProductId = 4,
+                                //Id = 7,
+                                //ProductId = 4,
                                 AvailableStock = 1,
                                 Name = "Glass size H 83mm D 70mm",
                                 Description = "Approx. burn time: 30-35 hours",
@@ -220,8 +220,8 @@ namespace MVCRoseNoirDatabase.Data
                             },
                             new ProductOption
                             {
-                                Id = 8,
-                                ProductId = 4,
+                                //Id = 8,
+                                //ProductId = 4,
                                 AvailableStock = 1,
                                 Name = "Glass size H 93mm D 78mm",
                                 Description = "Approx. burn time: 40-45 hours",
@@ -256,8 +256,8 @@ namespace MVCRoseNoirDatabase.Data
                         {
                             new ProductOption
                             {
-                                Id = 9,
-                                ProductId = 5,
+                                //Id = 9,
+                                //ProductId = 5,
                                 AvailableStock = 1,
                                 Name = "Glass size H 83mm D 70mm",//NO INFO PROVIDED
                                 Description = "Approx. burn time: 30-35 hours",
@@ -271,8 +271,8 @@ namespace MVCRoseNoirDatabase.Data
                             },
                             new ProductOption
                             {
-                                Id = 10,
-                                ProductId = 5,
+                                //Id = 10,
+                                //ProductId = 5,
                                 AvailableStock = 1,
                                 Name = "Glass size H 93mm D 78mm",//NO INFO PROVIDED
                                 Description = "Approx. burn time: 40-45 hours",
@@ -305,8 +305,8 @@ namespace MVCRoseNoirDatabase.Data
                         {
                             new ProductOption
                             {
-                                Id = 11,
-                                ProductId = 6,
+                                //Id = 11,
+                                //ProductId = 6,
                                 AvailableStock = 1,
                                 Name = "Glass size H 83mm D 70mm",//NO INFO PROVIDED
                                 Description = "Approx. burn time: 30-35 hours",
@@ -320,8 +320,8 @@ namespace MVCRoseNoirDatabase.Data
                             },
                             new ProductOption
                             {
-                                Id = 12,
-                                ProductId = 6,
+                                //Id = 12,
+                                //ProductId = 6,
                                 AvailableStock = 1,
                                 Name = "Glass size H 93mm D 78mm",//NO INFO PROVIDED
                                 Description = "Approx. burn time: 40-45 hours",
@@ -356,8 +356,8 @@ namespace MVCRoseNoirDatabase.Data
                         {
                             new ProductOption
                             {
-                                Id = 13,
-                                ProductId = 7,
+                                //Id = 13,
+                                //ProductId = 7,
                                 AvailableStock = 2,
                                 Name = "Size Doughnut Shape",
                                 Description = "Although our bath bombs have a shelf life of 12 months in optimal conditions,"
@@ -370,8 +370,8 @@ namespace MVCRoseNoirDatabase.Data
                             },
                             new ProductOption
                             {
-                                Id = 14,
-                                ProductId = 7,
+                                //Id = 14,
+                                //ProductId = 7,
                                 AvailableStock = 3,
                                 Name = "Size Round Shape ",
                                 Description = "Although our bath bombs have a shelf life of 12 months in optimal conditions,"
@@ -384,8 +384,8 @@ namespace MVCRoseNoirDatabase.Data
                             },
                             new ProductOption
                             {
-                                Id = 15,
-                                ProductId = 7,
+                                //Id = 15,
+                                //ProductId = 7,
                                 AvailableStock = 4,
                                 Name = "Size Football Shape ",
                                 Description = "Although our bath bombs have a shelf life of 12 months in optimal conditions,"
@@ -422,8 +422,8 @@ namespace MVCRoseNoirDatabase.Data
                         {
                             new ProductOption
                             {
-                                Id = 16,
-                                ProductId = 8,
+                                //Id = 16,
+                                //ProductId = 8,
                                 AvailableStock = 1,
                                 Name = "Size Doughnut Shape",//NO INFO PROVIDED
                                 Description = "Rosemary, Clove & Sage",
@@ -435,8 +435,8 @@ namespace MVCRoseNoirDatabase.Data
                             },
                             new ProductOption
                             {
-                                Id = 17,
-                                ProductId = 8,
+                                //Id = 17,
+                                //ProductId = 8,
                                 AvailableStock = 1,
                                 Name = "Size Round Shape",
                                 Description = "Rosemary, Clove & Sage",
@@ -450,8 +450,8 @@ namespace MVCRoseNoirDatabase.Data
                             },
                             new ProductOption
                             {
-                                Id = 18,
-                                ProductId = 8,
+                                //Id = 18,
+                                //ProductId = 8,
                                 AvailableStock = 1,
                                 Name = "Size Football Shape",
                                 Description = "Rosemary, Clove & Sage",
@@ -489,8 +489,8 @@ namespace MVCRoseNoirDatabase.Data
                         {
                             new ProductOption
                             {
-                                Id = 19,
-                                ProductId = 9,
+                                //Id = 19,
+                                //ProductId = 9,
                                 AvailableStock = 1,
                                 Name = "Size Doughnut Shape",//NO INFO PROVIDED
                                 Description = "Sweet Almond Oil, \nCocoa, \nWitch Hazel, \nLavenda & Epsom Salt",
@@ -502,8 +502,8 @@ namespace MVCRoseNoirDatabase.Data
                             },
                             new ProductOption
                             {
-                                Id = 20,
-                                ProductId = 9,
+                                //Id = 20,
+                                //ProductId = 9,
                                 AvailableStock = 1,
                                 Name = "Size Round Shape",
                                 Description = "Sweet Almond Oil, \nCocoa, \nWitch Hazel,\n Lavenda & Epsom Salt",
@@ -517,8 +517,8 @@ namespace MVCRoseNoirDatabase.Data
                             },
                             new ProductOption
                             {
-                                Id = 21,
-                                ProductId = 9,
+                                //Id = 21,
+                                //ProductId = 9,
                                 AvailableStock = 1,
                                 Name = "Size Football Shape",
                                 Description = "Sweet Almond Oil, \nCocoa, \nWitch Hazel, \nLavenda & Epsom Salt",
@@ -555,8 +555,8 @@ namespace MVCRoseNoirDatabase.Data
                         {
                             new ProductOption
                             {
-                                Id = 22,
-                                ProductId = 10,
+                                //Id = 22,
+                                //ProductId = 10,
                                 AvailableStock = 1,
                                 Name = "Medium",//NO INFO PROVIDED
                                 Description = "Sweet Almond Oil, \nCocoa, \nWitch Hazel, \nLavenda & Epsom Salt",
@@ -568,8 +568,8 @@ namespace MVCRoseNoirDatabase.Data
                             },
                             new ProductOption
                             {
-                                Id = 23,
-                                ProductId = 10,
+                                //Id = 23,
+                                //ProductId = 10,
                                 AvailableStock = 1,
                                 Name = "Large",
                                 Description = "Sweet Almond Oil, \nCocoa, \nWitch Hazel, \nLavenda & Epsom Salt",
@@ -607,8 +607,8 @@ namespace MVCRoseNoirDatabase.Data
                         {
                             new ProductOption
                             {
-                                Id = 24,
-                                ProductId = 10,
+                                //Id = 24,
+                                //ProductId = 10,
                                 AvailableStock = 1,
                                 Name = "Medium",
                                 Description = "Sweet Almond Oil, Cocoa, Witch Hazel, Lavenda & Epsom Salt",
@@ -620,8 +620,8 @@ namespace MVCRoseNoirDatabase.Data
                             },
                             new ProductOption
                             {
-                                Id = 25,
-                                ProductId = 11,
+                                //Id = 25,
+                                //ProductId = 11,
                                 AvailableStock = 1,
                                 Name = "Large",
                                 Description = "Sweet Almond Oil, Cocoa, Witch Hazel, Lavenda & Epsom Salt",
@@ -658,8 +658,8 @@ namespace MVCRoseNoirDatabase.Data
                         {
                             new ProductOption
                             {
-                                Id = 26,
-                                ProductId = 12,
+                                //Id = 26,
+                                //ProductId = 12,
                                 AvailableStock = 1,
                                 Name = "Medium",//NO INFO PROVIDED
                                 Description = "Sweet Almond Oil, Cocoa, Witch Hazel, Lavenda & Epsom Salt",
@@ -671,8 +671,8 @@ namespace MVCRoseNoirDatabase.Data
                             },
                             new ProductOption
                             {
-                                Id = 27,
-                                ProductId = 12,
+                                //Id = 27,
+                                //ProductId = 12,
                                 AvailableStock = 1,
                                 Name = "Large",
                                 Description = "Sweet Almond Oil, Cocoa, Witch Hazel, Lavenda & Epsom Salt",
