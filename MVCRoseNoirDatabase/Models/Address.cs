@@ -18,9 +18,13 @@ namespace MVCRoseNoirDatabase.Models
     public class Address
     {
         public int AddressId { get; set; }
+
+        [Display(Name = "Address Type")]
         public AddressTypes AddressType { get; set; }
 
         [Required, StringLength(5)]
+
+        [Display(Name = "House Number")]
         public string HouseNumber { get; set; } = string.Empty;
 
         [Required, StringLength(20)]
@@ -40,6 +44,7 @@ namespace MVCRoseNoirDatabase.Models
 
         [Required, StringLength(8)]
 
+        [Display(Name = "Post Code")]
         public string PostCode { get; set; } = string.Empty;
 
 

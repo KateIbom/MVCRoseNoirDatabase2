@@ -20,9 +20,13 @@ namespace MVCRoseNoirDatabase.Models
         public int PhoneNumberId { get; set; }
 
         [Required, StringLength (3)]
+
+        [Display(Name = "International Code")]
         public string InternationalCode { get; set; } = string.Empty;
 
         [Required, StringLength(3), DataType(DataType .PhoneNumber )]
+
+        [Display(Name = "Area Code")]
         public string AreaCode { get; set; } =  string.Empty ;
 
         public string Number { get; set; } = string.Empty;

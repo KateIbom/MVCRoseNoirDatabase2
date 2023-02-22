@@ -16,6 +16,7 @@ namespace MVCRoseNoirDatabase.Models
         [Required, DisplayName("Description"), DataType(DataType.MultilineText)] 
         public string Description { get; set; } = string.Empty;
 
+        [Display(Name = "Image")]
         public string MainImageUrl { get; set; } = string.Empty;
 
         public Categories Category { get; set; }
@@ -29,9 +30,12 @@ namespace MVCRoseNoirDatabase.Models
         public string CountryOfOrigin { get; set; } = "uk";
 
         [DataType(DataType.MultilineText)]
+        [Display(Name = "Ingredient List")]
         public string IngredientList { get; set; } = string.Empty;
 
         [DataType(DataType.MultilineText)]
+
+        [Display(Name = "Allergen List")]
         public string AllergenList { get; set; } = string.Empty;
 
 		public virtual List<ProductOption>? Options { get; set; }

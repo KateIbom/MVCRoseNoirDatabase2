@@ -12,8 +12,13 @@ namespace MVCRoseNoirDatabase.Models
     {
         [Key]
         public int Id { get; set; }
+
+        [Display(Name = "Order Id")]
+
         public int OrderId { get; set; }
-        
+
+        [Display(Name = "Product Option")]
+
         public int ProductOptionId { get; set; }
 
         [Range (0,12)]

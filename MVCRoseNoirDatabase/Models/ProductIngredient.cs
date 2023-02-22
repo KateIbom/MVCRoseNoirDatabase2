@@ -9,9 +9,10 @@ namespace MVCRoseNoirDatabase.Models
 {
     public enum FragrenceNotes { None, Base, Middle, Top }
 
-    public class ProductIngredient
+    public class ProductIngredient 
     {
         [Key]
+        
         public int ProductId { get; set; }
         [Key]
         public string IngredientId { get; set; }

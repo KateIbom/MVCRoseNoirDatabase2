@@ -1,17 +1,21 @@
 ﻿@model IEnumerable<MVCRoseNoirDatabase.Models.Address>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Customer Address";
 }
 
-<h1>Index</h1>
+<h1>Address details</h1>
+<p class="lead">
+    This page lists all the current Rose Noir products and
+    allow staff to edit existing products of creating new ones
+</p>
 
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
+<table class="table table-bordered table-striped table-hover">
     <thead>
-        <tr>
+        <tr class="bg-light">
             <th>
                 @Html.DisplayNameFor(model => model.AddressType)
             </th>
@@ -60,7 +64,6 @@
             <td>
                 @Html.DisplayFor(modelItem => item.PostCode)
             </td>
-            <div></div>
             <td>
                     <a class="btn btn-success p-2" asp-action="Edit" asp-route-id="@item.AddressId">Edit</a> |
                     <a class="btn btn-outline-info p-2" asp-action="Details" asp-route-id="@item.AddressId">Details</a> |

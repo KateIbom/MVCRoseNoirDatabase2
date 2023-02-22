@@ -1,13 +1,14 @@
 ﻿@model IEnumerable<MVCRoseNoirDatabase.Models.Customer>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Customer Details";
 }
 
-<h1>Index</h1>
+<h1>Name and Contact Number</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
+<p class="lead">
+    This page lists all the current customer details and
+    allow staff to edit existing details by adding new ones
 </p>
 <table class="table">
     <thead>
@@ -49,9 +50,9 @@
                 @Html.DisplayFor(modelItem => item.MobileNumber)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.CustomerId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.CustomerId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.CustomerId">Delete</a>
+                    <a class="btn btn-success p-2" asp-action="Edit" asp-route-id="@item.CustomerId">Edit</a> |
+                    <a class="btn btn-outline-info p-2 asp-action="Details" asp-route-id="@item.CustomerId">Details</a> |
+                    <a class="btn btn-danger p-2" asp-action="Delete" asp-route-id="@item.CustomerId">Delete</a>
             </td>
         </tr>
 }
