@@ -22,6 +22,7 @@ namespace MVCRoseNoirDatabase.Models
         // e.g. the name of a colour, or the size
         [Required,StringLength(50),DisplayName("Option Name")]
         public string Name { get; set; } = string.Empty;
+        
         // short description if needed
         [Required, StringLength(200), DisplayName("Description")]
         public string Description { get; set;} = string.Empty;
