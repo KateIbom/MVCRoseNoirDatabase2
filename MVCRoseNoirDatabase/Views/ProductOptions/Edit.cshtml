@@ -4,9 +4,9 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h1>Edit @Model.Name</h1>
 
-<h4>ProductOption</h4>
+<h4>Option Details</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -15,7 +15,7 @@
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
                 <label asp-for="ProductId" class="control-label"></label>
-                <select asp-for="ProductId" class="form-control" asp-items="ViewBag.ProductId"></select>
+                <input asp-for="ProductId" class="form-control" />
                 <span asp-validation-for="ProductId" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -25,7 +25,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Description" class="control-label"></label>
-                <input asp-for="Description" class="form-control" />
+                <textarea asp-for="Description" class="form-control"></textarea>
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -60,7 +60,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="SizeUnit" class="control-label"></label>
-                <select asp-for="SizeUnit" class="form-control"></select>
+                <select asp-for="SizeUnit" asp-items="Html.GetEnumSelectList<SizeUnits>()" class="form-control"></select>
                 <span asp-validation-for="SizeUnit" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -70,12 +70,14 @@
             </div>
             <div class="form-group">
                 <label asp-for="WeightUnit" class="control-label"></label>
-                <select asp-for="WeightUnit" class="form-control"></select>
+                <select asp-for="WeightUnit" asp-items="Html.GetEnumSelectList<WeightUnits>()"
+                class="form-control"></select>
                 <span asp-validation-for="WeightUnit" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="OptionType" class="control-label"></label>
-                <select asp-for="OptionType" class="form-control"></select>
+                <select asp-for="OptionType" asp-items="Html.GetEnumSelectList<OptionTypes>()"
+                    class="form-control"></select>
                 <span asp-validation-for="OptionType" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -84,14 +86,14 @@
                 <span asp-validation-for="Discount" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn btn-primary m-2" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a class="btn btn-secondary m-2" asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {
