@@ -10,9 +10,9 @@
     This page lists all the current customer details and
     allow staff to edit existing details by adding new ones
 </p>
-<table class="table">
+<table class="table table-bordered table-striped table-hover">
     <thead>
-        <tr>
+        <tr class="bg-light">
             <th>
                 @Html.DisplayNameFor(model => model.FirstName)
             </th>
@@ -55,6 +55,10 @@
                     <a class="btn btn-danger p-2" asp-action="Delete" asp-route-id="@item.CustomerId">Delete</a>
             </td>
         </tr>
+            
 }
     </tbody>
 </table>
+<p>
+    <a class="btn btn-outline-success" asp-action="Create">Add New</a>
+</p>

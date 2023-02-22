@@ -1,17 +1,15 @@
 ﻿@model IEnumerable<MVCRoseNoirDatabase.Models.ProductOption>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Product Options";
 }
 
 <h1>Listing of All Product Options</h1>
 
-<p>
-    <a class="btn btn-outline-success" asp-action="Create">Add New</a>
-</p>
-<table class="table">
+
+<table class="table table-bordered table-striped table-hover">
     <thead>
-        <tr>
+        <tr class="bg-light">
             <th>
                 Option Name
             </th>
@@ -105,3 +103,6 @@
 }
     </tbody>
 </table>
+<p>
+    <a class="btn btn-outline-success" asp-action="Create">Add New</a>
+</p>

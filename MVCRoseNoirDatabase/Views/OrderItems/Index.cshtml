@@ -7,13 +7,13 @@
 <h1>Product Ordered</h1>
 
 <p>
-    <a asp-action="Create">
+    <a asp-action="Add New">
         This page lists all the oderef items allows staff to edit existing details by adding new ones
     </a>
 </p>
 <table class="table table-bordered table-striped table-hover">
     <thead>
-        <tr>
+        <trclass="bg-light">
             <th>
                 @Html.DisplayNameFor(model => model.OrderId)
             </th>
@@ -53,3 +53,6 @@
 }
     </tbody>
 </table>
+<p>
+    <a class="btn btn-outline-success" asp-action="Create">Add New</a>
+</p>

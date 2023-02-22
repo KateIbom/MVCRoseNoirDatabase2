@@ -1,17 +1,15 @@
 ﻿@model IEnumerable<MVCRoseNoirDatabase.Models.PaymentCard>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Payment Cards";
 }
 
-<h1>Index</h1>
+<h1>Payment Details</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
+
+<table class="table table-bordered table-striped table-hover">
     <thead>
-        <tr>
+        <tr class="bg-light">
             <th>
                 @Html.DisplayNameFor(model => model.PaymentType)
             </th>
@@ -63,3 +61,6 @@
 }
     </tbody>
 </table>
+<p>
+    <a class="btn btn-outline-success" asp-action="Create">Add New</a>
+</p>
