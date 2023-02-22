@@ -25,6 +25,7 @@ namespace MVCRoseNoirDatabase.Models
 
         public float Discount { get; set; } = 0;
 
+        [Display(Name="County of Origin")]
         public string CountryOfOrigin { get; set; } = "uk";
 
         [DataType(DataType.MultilineText)]
