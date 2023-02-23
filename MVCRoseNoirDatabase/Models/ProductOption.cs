@@ -24,7 +24,7 @@ namespace MVCRoseNoirDatabase.Models
         public string Name { get; set; } = string.Empty;
         
         // short description if needed
-        [Required, StringLength(200), DisplayName("Description")]
+        [Required, StringLength(400)]
         public string Description { get; set;} = string.Empty;
         
         public string ImageUrl { get; set; } = string.Empty;
