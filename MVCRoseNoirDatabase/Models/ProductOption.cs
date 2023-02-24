@@ -31,21 +31,29 @@ namespace MVCRoseNoirDatabase.Models
 
         // Alternative option price if not the same as the main product
         public decimal Price { get; set; } = 0;
-        
+
         // Stock Control
+        [Display (Name = "IS")]
         public int IncomingStock { get; set; } = 0;
+
+        [Display(Name = "AS")]
         public int AvailableStock { get; set; } = 1;
+
+        [Display(Name = "CS")]
         public int ComittedStock { get; set; } = 0;
 
         // is this needed ??
         public int Size { get; set; } = 0;
 
+        [Display(Name = "Size Units")]
         public SizeUnits SizeUnit { get; set; } = SizeUnits.cl;
 
         public float Weight { get; set; } = 0;
 
+        [Display(Name = "Units")]
         public WeightUnits WeightUnit { get; set; } = WeightUnits.g;
 
+        [Display(Name = "Type")]
         public OptionTypes OptionType {get; set;}
 
         public float Discount { get; set; } = 0;

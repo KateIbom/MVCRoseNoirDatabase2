@@ -1,14 +1,12 @@
 ﻿@model IEnumerable<MVCRoseNoirDatabase.Models.Order>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Orders";
 }
 
 <h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+
 <table class="table">
     <thead>
         <tr>
@@ -67,11 +65,14 @@
                 @Html.DisplayFor(modelItem => item.GiftsCount)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.OrderId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.OrderId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.OrderId">Delete</a>
+                    <a class ="btn btn-outline-success m-1" asp-action="Edit" asp-route-id="@item.OrderId">Edit</a> 
+                    <a class="btn btn-outline-info m-1" asp-action="Details" asp-route-id="@item.OrderId">Details</a> 
+                    <a class="btn btn-outline-danger m-1" asp-action="Delete" asp-route-id="@item.OrderId">Delete</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
+<p>
+    <a class="btn btn-outline-success" asp-action="Create">Create New Order</a>
+</p>
